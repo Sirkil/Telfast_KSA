@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webinar Invitation</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flyer {
+      position: relative;
+      width: 100%;
+      max-width: 600px; /* optional: limit size on large screens */
+      aspect-ratio: 3/4; /* keep same proportion as flyer */
+      background: url("Cover.png") no-repeat center center;
+      background-size: cover;
+    }
+
+    .button {
+      position: absolute;
+      left: 50%;
+      top: 64%; /* adjust to match exact flyer button position */
+      transform: translate(-50%, -50%);
+      width: 45%; /* scales with flyer */
+      height: auto;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="flyer">
+    <a href="https://www.zoom.com" target="_blank">
+      <img src="Zoom Button.png" alt="Register Button" class="button">
+    </a>
+  </div>
+</body>
+</html>
